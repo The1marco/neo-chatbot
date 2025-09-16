@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>NEO AI</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="chat-container">
+  <div class="chat-header">
+    <button class="menu-btn" title="Menú" aria-label="Menú">&#9776;</button>
+    <span class="chat-title">NEO AI</span>
+    <span id="modoIndicador" class="modo-indicador">Básico</span>
+    <button type="button" class="modo-btn" id="modoBtn">Cambiar modo</button>
+    <button class="theme-toggle" id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema">
+      <span id="themeIcon">&#9790;</span>
+    </button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages"></div>
+
+  <form class="chat-input-area" id="chatForm" autocomplete="off">
+    <input type="text" class="chat-input" id="chatInput" placeholder="¿En qué puedo ayudarte hoy?" required />
+    <button type="submit" class="send-btn">Enviar</button>
+  </form>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
