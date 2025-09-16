@@ -66,7 +66,7 @@ chatForm.addEventListener('submit', async (e) => {
   const modelo = modoSuper ? "gpt-4.1" : "gpt-3.5-turbo";
 
   try {
-    const response = await fetch("/netfily/functions/neo", {
+    const response = await fetch("/.netlify/functions/neo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
